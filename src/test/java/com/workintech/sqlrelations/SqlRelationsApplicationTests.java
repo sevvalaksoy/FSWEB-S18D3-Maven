@@ -67,7 +67,7 @@ class SqlRelationsApplicationTests {
 				.filter(nurse1 -> nurse1.getProficiency().equals("Cardiology"))
 				.collect(Collectors.toList()).get(0);
 
-		assertNotNull(nurse);
+		assertNotNull(foundNurse);
 	}
 
 	@DisplayName("Nurse tablosu mevcut mu ? Doğru oluşturulmuş mu ?")
